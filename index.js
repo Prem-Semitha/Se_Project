@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 let sellers = [];
+let products = [];
 app.get('/', (req, res) => {
   const seller = sellers.find((seller) => seller.id === req.query.id);
 });
